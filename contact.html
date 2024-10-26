@@ -13,7 +13,7 @@
             justify-content: center;
             min-height: 100vh;
             margin: 0;
-            background: linear-gradient(to right, #6a11cb, #2575fc);
+            background: linear-gradient(to right, #4d6ddf, #7180df); /* نفس ألوان الصفحة الرئيسية */
             color: #ffffff;
             padding: 10px;
             box-sizing: border-box;
@@ -28,10 +28,10 @@
         }
 
         .contact-form {
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color: rgba(255, 255, 255, 0.15); /* لون خلفية مشابه */
             padding: 20px;
             border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             width: 100%;
             max-width: 350px;
             margin-bottom: 15px;
@@ -45,14 +45,14 @@
             border-radius: 6px;
             border: 1px solid #ddd;
             outline: none;
-            background-color: #ffffff;
+            background-color: #f0f0f0;
             color: #333;
             transition: border-color 0.3s;
             font-size: 0.9em;
         }
 
         input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
-            border-color: #6a11cb;
+            border-color: #4d6ddf; /* لون عند التركيز */
         }
 
         textarea {
@@ -65,7 +65,7 @@
             font-size: 0.9em;
             border: none;
             border-radius: 6px;
-            background-color: #5859d6;
+            background-color: #3f5ec8; /* لون الأزرار */
             color: white;
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.2s ease;
@@ -74,14 +74,14 @@
         }
 
         button:hover {
-            background-color: #ff4f4f;
+            background-color: #354dab; /* لون تحويم الأزرار */
             transform: scale(1.03);
         }
 
         #contact-info {
             margin-top: 15px;
             text-align: center;
-            color: #fffa;
+            color: #f0f0f0;
             font-weight: bold;
             font-size: 0.9em;
             word-break: break-word;
@@ -89,11 +89,25 @@
 
         .back-button {
             margin-top: 15px;
-            background-color: #6a11cb;
+            background-color: #3f5ec8;
         }
 
         .back-button:hover {
-            background-color: #5a0abf;
+            background-color: #354dab;
+        }
+
+        /* تنسيق الفوتر */
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            padding: 15px 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #ffffff;
+            font-size: 0.9em;
+            border-top: 1px solid #ffffff; /* خط علوي للتمييز */
         }
 
         @media (min-width: 768px) {
@@ -122,6 +136,8 @@
     <div id="contact-info" class="hidden"></div>
     
     <button class="back-button" onclick="goBack()">العودة للخلف</button>
+
+    <footer>تم برمجة الصفحة من قبل أحمد ماجد 25/10/2024</footer>
 
     <script>
         function submitForm() {
@@ -152,3 +168,4 @@
 
 </body>
 </html>
+
